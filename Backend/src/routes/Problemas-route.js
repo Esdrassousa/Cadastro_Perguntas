@@ -1,0 +1,12 @@
+const express = require('express')
+
+const router = express.Router();
+
+const controller = require('../controllers/Problemas-controller')
+
+
+router.post('/' , controller.post)
+router.get('/:Tema' , controller.getByTema)
+
+
+module.exports = router;
